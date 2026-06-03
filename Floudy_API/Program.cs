@@ -9,21 +9,30 @@ namespace Floudy.API;
 public partial class Program
 {
     private const int RECENT_LOG_COUNT = 100;
+    private const string DefaultCorsOrigin = "https://floudy-app.github.io";
 
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateSlimBuilder(args);
 
-        //builder.WebHost.ConfigureKestrel((context, options) => options.Configure(context.Configuration.GetSection("Kestrel")));
+        var port = Environment.GetEnvironmentVariable("PORT") ?? "5057";
+        builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+
+        var floudyDb = builder.Configuration.GetConnectionString("FloudyDB")
+            ?? throw new InvalidOperationException("Connection string 'FloudyDB' is not configured.");
+        var floudyLogDb = builder.Configuration.GetConnectionString("FloudyLogDB")
+            ?? throw new InvalidOperationException("Connection string 'FloudyLogDB' is not configured.");
+        var mongoDb = builder.Configuration.GetConnectionString("MongoDB")
+            ?? throw new InvalidOperationException("Connection string 'MongoDB' is not configured.");
 
         builder.Services.AddOpenApi();
         builder.Services.AddControllers();
         builder.Services.AddSignalR();
 
-        builder.Services.AddSingleton(new FileRepository());
-        builder.Services.AddSingleton(new UserRepository());
-        builder.Services.AddSingleton(new ChatRepository());
-        builder.Services.AddSingleton(new LogRepository());
+        builder.Services.AddSingleton(new FileRepository(floudyDb));
+        builder.Services.AddSingleton(new UserRepository(floudyDb));
+        builder.Services.AddSingleton(new ChatRepository(mongoDb));
+        builder.Services.AddSingleton(new LogRepository(floudyLogDb));
 
         builder.Services.AddSingleton<FileService>();
         builder.Services.AddSingleton<UserService>();
@@ -33,9 +42,15 @@ public partial class Program
         builder.Services.AddSingleton<TokenService>();
         builder.Services.AddSingleton<EmailService>();
 
+        var corsOrigins = builder.Configuration.GetSection("CorsSettings:AllowedOrigins").Get<string[]>();
+        if (corsOrigins == null || corsOrigins.Length == 0)
+        {
+            corsOrigins = [DefaultCorsOrigin];
+        }
+
         builder.Services.AddCors(options => options.AddPolicy("floudy_frontend", policy =>
         {
-            policy.WithOrigins("http://10.174.104.44:5173")
+            policy.WithOrigins(corsOrigins)
                   .AllowAnyMethod()
                   .AllowAnyHeader()
                   .AllowCredentials();
@@ -44,14 +59,14 @@ public partial class Program
         var app = builder.Build();
 
         app.UseCors("floudy_frontend");
+        app.MapGet("/", () => Results.Ok("Floudy API"));
         app.MapOpenApi();
-        //app.UseHttpsRedirection();
         app.MapControllers();
         app.MapHub<FloudyHub>("/floudyhub");
 
         using (var scope = app.Services.CreateScope())
         {
-            using (var context = new AppDbContext())
+            using (var context = new AppDbContext(floudyDb))
             {
                 var max_id = context.Files.Any() ? context.Files.Max(f => f.ID) : 0;
                 GlobalIdManager.BaseValue = max_id + 1;

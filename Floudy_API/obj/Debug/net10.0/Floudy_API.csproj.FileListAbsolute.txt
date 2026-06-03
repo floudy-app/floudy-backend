@@ -153,4 +153,4 @@ C:\Users\marius\source\web\floudy_full\Floudy_API\Floudy_API\bin\Debug\net10.0\z
 C:\Users\marius\source\web\floudy_full\Floudy_API\Floudy_API\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
 C:\Users\marius\source\web\floudy_full\Floudy_API\Floudy_API\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
 C:\Users\marius\source\web\floudy_full\Floudy_API\Floudy_API\bin\Debug\net10.0\appsettings.Production.json
-C:\Users\marius\source\web\floudy_full\Floudy_API\Floudy_API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\marius\source\web\floudy_full\Floudy_API\Floudy_API\obj\Debug\net10.0\Floudy_API.sourcelink.json

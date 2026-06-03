@@ -10,9 +10,14 @@ namespace Floudy.API.Storage
         private readonly string connection_string;
         private readonly string database_name;
 
-        public ChatDbContext(string? connection_string = null, string? database_name = null)
+        public ChatDbContext(string connection_string, string? database_name = null)
         {
-            this.connection_string = connection_string ?? "mongodb://localhost:27017";
+            if (string.IsNullOrWhiteSpace(connection_string))
+            {
+                throw new ArgumentException("Connection string is required.", nameof(connection_string));
+            }
+
+            this.connection_string = connection_string;
             this.database_name = database_name ?? "floudy_chat";
         }
 
@@ -22,8 +27,8 @@ namespace Floudy.API.Storage
         {
             if (!optionsBuilder.IsConfigured)
             {
-                var client = new MongoClient(this.connection_string);
-                optionsBuilder.UseMongoDB(client, this.database_name);
+                var client = new MongoClient(connection_string);
+                optionsBuilder.UseMongoDB(client, database_name);
             }
         }
 

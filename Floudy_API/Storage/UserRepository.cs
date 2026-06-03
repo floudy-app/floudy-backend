@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Floudy.API.Storage
 {
-    public class UserRepository(string? connection_string = null)
+    public class UserRepository(string connection_string)
     {
         public UserEntity? GetById(long id)
         {

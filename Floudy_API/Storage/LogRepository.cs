@@ -2,7 +2,7 @@ using Floudy.API.Storage.Entities;
 
 namespace Floudy.API.Storage
 {
-    public class LogRepository(string? connection_string = null)
+    public class LogRepository(string connection_string)
     {
         public void AddLog(LogEntryEntity entry)
         {

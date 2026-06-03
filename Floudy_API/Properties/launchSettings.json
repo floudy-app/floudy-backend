@@ -6,7 +6,7 @@
       "dotnetRunMessages": true,
       "launchBrowser": false,
       "launchUrl": "api/files",
-      "applicationUrl": "http://0.0.0.0:5057",
+      "applicationUrl": "http://0.0.0.0:10000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Production"
       }

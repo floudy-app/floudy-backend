@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: floudy-backend
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__FloudyDB
+        sync: false
+      - key: ConnectionStrings__FloudyLogDB
+        sync: false
+      - key: ConnectionStrings__MongoDB
+        sync: false
+      - key: GmailAppKey
+        sync: false

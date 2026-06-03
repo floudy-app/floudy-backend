@@ -2,7 +2,7 @@ using Floudy.API.Storage.Entities;
 
 namespace Floudy.API.Storage
 {
-    public class ChatRepository(string? connection_string = null, string? database_name = null)
+    public class ChatRepository(string connection_string, string? database_name = null)
     {
         public IEnumerable<ChatMessageEntity> GetAll()
         {

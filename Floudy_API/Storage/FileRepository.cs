@@ -2,7 +2,7 @@ using Floudy.API.Storage.Entities;
 
 namespace Floudy.API.Storage
 {
-    public class FileRepository(string? connection_string = null)
+    public class FileRepository(string connection_string)
     {
         public RawFileEntity? GetById(long id)
         {

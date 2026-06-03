@@ -46,7 +46,9 @@ public class AuthControllerTests : IDisposable
         var config = new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string, string?>
         {
             ["SmtpSettings:Host"] = "localhost",
-            ["SmtpSettings:Port"] = "25"
+            ["SmtpSettings:Port"] = "25",
+            ["SmtpSettings:Email"] = "test@example.com",
+            ["GmailAppKey"] = "test-app-password"
         }).Build();
 
         emailService = new FakeEmailService(config);

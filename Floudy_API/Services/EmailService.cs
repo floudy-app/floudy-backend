@@ -1,5 +1,3 @@
-using System;
-using System.IO;
 using System.Net;
 using System.Net.Mail;
 using Microsoft.Extensions.Configuration;
@@ -11,24 +9,24 @@ namespace Floudy.API.Services
         private readonly string host;
         private readonly int port;
         private readonly string senderEmail;
-        private readonly string passwordFilePath;
+        private readonly string appPassword;
 
         public EmailService(IConfiguration configuration)
         {
             var section = configuration.GetSection("SmtpSettings");
-            host = section.GetValue<string>("Host")!;
-            port = section.GetValue<int>("Port");
-            senderEmail = section.GetValue<string>("Email")!;
-            passwordFilePath = section.GetValue<string>("PasswordPath")!;
+            host = section.GetValue<string>("Host") ?? "smtp.gmail.com";
+            port = section.GetValue<int?>("Port") ?? 587;
+            senderEmail = section.GetValue<string>("Email")
+                ?? throw new InvalidOperationException("SmtpSettings:Email is not configured.");
+
+            appPassword = Environment.GetEnvironmentVariable("GmailAppKey")
+                ?? configuration["GmailAppKey"]
+                ?? throw new InvalidOperationException("GmailAppKey environment variable is not configured.");
         }
 
         public virtual void SendRecoveryEmail(string recipientEmail, string username, string resetUrl)
         {
             if (string.IsNullOrWhiteSpace(recipientEmail)) throw new ArgumentException("Recipient email cannot be empty.", nameof(recipientEmail));
-
-            string password;
-            if (File.Exists(passwordFilePath)) password = File.ReadAllText(passwordFilePath).Trim();
-            else throw new FileNotFoundException($"SMTP password file not found at: {passwordFilePath}");
 
             using var mail = new MailMessage();
             mail.From = new MailAddress(senderEmail, "Floudy");
@@ -49,7 +47,7 @@ namespace Floudy.API.Services
 
             using var smtp = new SmtpClient(host, port)
             {
-                Credentials = new NetworkCredential(senderEmail, password),
+                Credentials = new NetworkCredential(senderEmail, appPassword),
                 EnableSsl = true
             };
 

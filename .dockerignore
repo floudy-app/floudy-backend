@@ -1,0 +1,8 @@
+**/.vs
+**/.git
+**/bin
+**/obj
+**/Floudy_API.Tests
+**/*.user
+**/*.suo
+**/TestResults

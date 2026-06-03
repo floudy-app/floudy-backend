@@ -7,9 +7,14 @@ namespace Floudy.API.Storage
     {
         private readonly string connection_string;
 
-        public LogDbContext(string? connection_string = null)
+        public LogDbContext(string connection_string)
         {
-            this.connection_string = connection_string ?? @"Server=DESKTOP-PROOM\SQLEXPRESS;Database=FloudyLogDB;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True;";
+            if (string.IsNullOrWhiteSpace(connection_string))
+            {
+                throw new ArgumentException("Connection string is required.", nameof(connection_string));
+            }
+
+            this.connection_string = connection_string;
             Database.EnsureCreated();
         }
 
