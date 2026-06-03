@@ -1,14 +1,11 @@
 using Floudy.API.Services;
 using Floudy.API.Storage;
 using Floudy.API.Utility;
-using Microsoft.Extensions.DependencyInjection;
-using System.Runtime.InteropServices;
 
 namespace Floudy.API;
 
 public partial class Program
 {
-    private const int RECENT_LOG_COUNT = 100;
     private const string DefaultCorsOrigin = "https://floudy-app.github.io";
 
     public static void Main(string[] args)
@@ -60,33 +57,13 @@ public partial class Program
 
         using (var scope = app.Services.CreateScope())
         {
-            using (var context = new AppDbContext(floudyDb))
-            {
-                var max_id = context.Files.Any() ? context.Files.Max(f => f.ID) : 0;
-                GlobalIdManager.BaseValue = max_id + 1;
-                GlobalIdManager.Reset();
-            }
+            using var context = new AppDbContext(floudyDb);
 
-            if (GetConsoleWindow() != IntPtr.Zero)
-            {
-                Console.Write("Retreive recent logs? (y/n): ");
-                var response = Console.ReadKey();
-                Console.WriteLine();
-
-                if (response.Key == ConsoleKey.Y)
-                {
-                    var logService = scope.ServiceProvider.GetRequiredService<LogService>();
-                    var logs = logService.GetRecentLogs().Take(RECENT_LOG_COUNT).Reverse().ToList();
-
-                    Console.WriteLine();
-                    foreach (var log in logs) logService.PrintLog(log);
-                }
-            }
+            var max_id = context.Files.Any() ? context.Files.Max(f => f.ID) : 0;
+            GlobalIdManager.BaseValue = max_id + 1;
+            GlobalIdManager.Reset();
         }
 
         app.Run();
     }
-
-    [DllImport("kernel32.dll")]
-    static extern IntPtr GetConsoleWindow();
 }
