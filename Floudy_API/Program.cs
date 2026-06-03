@@ -36,12 +36,9 @@ public partial class Program
         builder.Services.AddSingleton<TokenService>();
         builder.Services.AddSingleton<EmailService>();
 
-        var corsOrigins = builder.Configuration.GetSection("CorsSettings:AllowedOrigins").Get<string[]>();
-        if (corsOrigins == null || corsOrigins.Length == 0) corsOrigins = [DefaultCorsOrigin];
-
         builder.Services.AddCors(options => options.AddPolicy("floudy_frontend", policy =>
         {
-            policy.WithOrigins(corsOrigins)
+            policy.WithOrigins(DefaultCorsOrigin)
                   .AllowAnyMethod()
                   .AllowAnyHeader()
                   .AllowCredentials();
