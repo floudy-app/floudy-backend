@@ -1,0 +1,387 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\storage\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\storage\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\storage\\chatdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\storage\\chatdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\storage\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\storage\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\models\\tokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\models\\tokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\storage\\entities\\suspicioususerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\storage\\entities\\suspicioususerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\storage\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\storage\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\storage\\logdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\storage\\logdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\storage\\logrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\storage\\logrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|c:\\users\\marius\\source\\web\\floudy_full\\floudy_api\\floudy_api\\utility\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1603C005-C62E-0449-D937-8BCE5ED483DD}|Floudy_API\\Floudy_API.csproj|solutionrelative:floudy_api\\utility\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Storage\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\AppDbContext.cs",
+              "RelativeToolTip": "Floudy_API\\Storage\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T18:40:14.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Services\\TokenService.cs",
+              "RelativeToolTip": "Floudy_API\\Services\\TokenService.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T20:10:25.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Services\\UserService.cs",
+              "RelativeToolTip": "Floudy_API\\Services\\UserService.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAEwEsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T20:08:27.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Floudy_API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwFUAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:37:27.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\FileRepository.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Storage\\FileRepository.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\FileRepository.cs",
+              "RelativeToolTip": "Floudy_API\\Storage\\FileRepository.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwDQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T16:27:45.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\ChatDbContext.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Storage\\ChatDbContext.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\ChatDbContext.cs",
+              "RelativeToolTip": "Floudy_API\\Storage\\ChatDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwA8AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T15:25:06.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Program.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Program.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Program.cs",
+              "RelativeToolTip": "Floudy_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T12:35:32.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "Floudy_API\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\appsettings.Production.json",
+              "RelativeToolTip": "Floudy_API\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-03T16:58:42.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Floudy_API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\appsettings.Development.json",
+              "RelativeToolTip": "Floudy_API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-03T16:58:41.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Services\\EmailService.cs",
+              "RelativeToolTip": "Floudy_API\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowCEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:36:58.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Floudy_API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Floudy_API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-31T20:22:24.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Tokens.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Models\\Tokens.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Models\\Tokens.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Models\\Tokens.cs",
+              "RelativeToolTip": "Floudy_API\\Models\\Tokens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T20:12:07.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Controllers\\FileController.cs",
+              "RelativeToolTip": "Floudy_API\\Controllers\\FileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T14:39:31.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LogDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\LogDbContext.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Storage\\LogDbContext.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\LogDbContext.cs",
+              "RelativeToolTip": "Floudy_API\\Storage\\LogDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T15:25:00.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Floudy_API\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:49:42.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SuspiciousUserEntity.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\Entities\\SuspiciousUserEntity.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Storage\\Entities\\SuspiciousUserEntity.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\Entities\\SuspiciousUserEntity.cs",
+              "RelativeToolTip": "Floudy_API\\Storage\\Entities\\SuspiciousUserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T23:58:25.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\ChatRepository.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Storage\\ChatRepository.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\ChatRepository.cs",
+              "RelativeToolTip": "Floudy_API\\Storage\\ChatRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T12:28:12.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LogRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\LogRepository.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Storage\\LogRepository.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Storage\\LogRepository.cs",
+              "RelativeToolTip": "Floudy_API\\Storage\\LogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T13:33:55.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Floudy_API\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T12:35:19.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Utility\\Utility.cs",
+              "RelativeDocumentMoniker": "Floudy_API\\Utility\\Utility.cs",
+              "ToolTip": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Utility\\Utility.cs",
+              "RelativeToolTip": "Floudy_API\\Utility\\Utility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T00:34:12.984Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

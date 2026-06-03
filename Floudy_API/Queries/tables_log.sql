@@ -1,0 +1,19 @@
+CREATE TABLE [LogEntries]
+(
+    [ID] BIGINT PRIMARY KEY IDENTITY(1,1),
+    [UserId] NVARCHAR(100) NOT NULL,
+    [Username] NVARCHAR(100) NOT NULL,
+    [GroupName] NVARCHAR(20) NOT NULL,
+    [Action] NVARCHAR(100) NOT NULL,
+    [ActionDescription] NVARCHAR(500) NOT NULL,
+    [Timestamp] DATETIME2 NOT NULL
+);
+
+CREATE TABLE [SuspiciousUsers]
+(
+    [ID] BIGINT PRIMARY KEY IDENTITY(1,1),
+    [UserId] NVARCHAR(100) NOT NULL,
+    [Username] NVARCHAR(100) NOT NULL,
+    [Reason] NVARCHAR(500) NOT NULL,
+    [DetectedAt] DATETIME2 NOT NULL
+);

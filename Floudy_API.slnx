@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Floudy_API/Floudy_API.csproj" />
+  <Project Path="Floudy_API.Tests/Floudy_API.Tests.csproj" />
+</Solution>
