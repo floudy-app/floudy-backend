@@ -57,6 +57,9 @@ public partial class Program
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex);
+                Console.WriteLine(ex.StackTrace);
+
                 context.Response.StatusCode = 500;
                 context.Response.ContentType = "application/json";
                 var error = JsonSerializer.Serialize(new { error = "An internal server error occurred.", detail = ex.Message });
