@@ -18,10 +18,12 @@ public partial class Program
         var port = Environment.GetEnvironmentVariable("PORT") ?? "5057";
         builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
-        var floudyDb = builder.Configuration.GetConnectionString("FloudyDB")
-            ?? throw new InvalidOperationException("Connection string 'FloudyDB' is not configured.");
-        var floudyLogDb = builder.Configuration.GetConnectionString("FloudyLogDB")
-            ?? throw new InvalidOperationException("Connection string 'FloudyLogDB' is not configured.");
+        var floudyDb = ConnectionStringNormalizer.ToSqlServer(
+            builder.Configuration.GetConnectionString("FloudyDB")
+            ?? throw new InvalidOperationException("Connection string 'FloudyDB' is not configured."));
+        var floudyLogDb = ConnectionStringNormalizer.ToSqlServer(
+            builder.Configuration.GetConnectionString("FloudyLogDB")
+            ?? throw new InvalidOperationException("Connection string 'FloudyLogDB' is not configured."));
         var mongoDb = builder.Configuration.GetConnectionString("MongoDB")
             ?? throw new InvalidOperationException("Connection string 'MongoDB' is not configured.");
 
