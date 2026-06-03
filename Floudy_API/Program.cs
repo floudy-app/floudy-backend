@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Floudy.API.Services;
 using Floudy.API.Storage;
 using Floudy.API.Utility;
@@ -47,19 +48,32 @@ public partial class Program
         var app = builder.Build();
 
         app.UseCors("floudy_frontend");
+
+        app.Use(async (context, next) =>
+        {
+            try
+            {
+                await next();
+            }
+            catch (Exception ex)
+            {
+                context.Response.StatusCode = 500;
+                context.Response.ContentType = "application/json";
+                var error = JsonSerializer.Serialize(new { error = "An internal server error occurred.", detail = ex.Message });
+                await context.Response.WriteAsync(error);
+            }
+        });
+
         app.MapGet("/", () => Results.Ok("Floudy API"));
         app.MapOpenApi();
         app.MapControllers();
         app.MapHub<FloudyHub>("/floudyhub");
 
-        using (var scope = app.Services.CreateScope())
-        {
-            using var context = new AppDbContext(floudyDb);
-
-            var max_id = context.Files.Any() ? context.Files.Max(f => f.ID) : 0;
-            GlobalIdManager.BaseValue = max_id + 1;
-            GlobalIdManager.Reset();
-        }
+        using var context = new AppDbContext(floudyDb);
+        var max_id = context.Files.Any() ? context.Files.Max(f => f.ID) : 0;
+        GlobalIdManager.BaseValue = max_id + 1;
+        GlobalIdManager.Reset();
+        context.Dispose();
 
         app.Run();
     }
