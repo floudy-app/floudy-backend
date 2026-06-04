@@ -18,19 +18,32 @@ namespace Floudy.API.Services
 
             var baseDir = AppContext.BaseDirectory;
 
-            var extension_path = Path.Combine(baseDir, "extensions.txt");
-            if (!File.Exists(extension_path)) extension_path = Path.Combine(Directory.GetParent(baseDir)!.Parent!.Parent!.Parent!.FullName, "extensions.txt");
+            var extension_path = FindFile(baseDir, "extensions.txt");
+            var profPath = FindFile(baseDir, "profanity.txt");
 
-            var profPath = Path.Combine(baseDir, "profanity.txt");
-            if (!File.Exists(profPath)) profPath = Path.Combine(Directory.GetParent(baseDir)!.Parent!.Parent!.Parent!.FullName, "profanity.txt");
-
-            suspicious_extensions = File.Exists(extension_path) ? new HashSet<string>(File.ReadAllLines(extension_path).Select(l => l.Trim()), StringComparer.OrdinalIgnoreCase)
+            suspicious_extensions = extension_path != null && File.Exists(extension_path) ? new HashSet<string>(File.ReadAllLines(extension_path).Select(l => l.Trim()), StringComparer.OrdinalIgnoreCase)
                                                                 : new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-            swear_patterns = File.Exists(profPath) ? File.ReadAllLines(profPath)
+            swear_patterns = profPath != null && File.Exists(profPath) ? File.ReadAllLines(profPath)
                                                          .Select(l => Encoding.UTF8.GetString(Convert.FromBase64String(l.Trim())))
                                                          .ToList()
                                                    : [];
+        }
+
+        private static string? FindFile(string startDir, string fileName)
+        {
+            var candidate = Path.Combine(startDir, fileName);
+            if (File.Exists(candidate)) return candidate;
+
+            var dir = Directory.GetParent(startDir);
+            while (dir != null)
+            {
+                candidate = Path.Combine(dir.FullName, fileName);
+                if (File.Exists(candidate)) return candidate;
+                dir = dir.Parent;
+            }
+
+            return null;
         }
 
         public void CheckBatchUpload(string userId, string username, int fileCount, IEnumerable<string> fileNames, IEnumerable<long> fileSizes)
