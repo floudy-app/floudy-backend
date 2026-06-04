@@ -55,7 +55,7 @@ namespace Floudy.API.Storage
                     ID = 1,
                     Username = "admin",
                     Email = "prooms.email@gmail.com",
-                    Password = "admin",
+                    Password = Environment.GetEnvironmentVariable("AdminPassword")!,
                     RoleId = 1,
                     IsBlocked = false
                 }
