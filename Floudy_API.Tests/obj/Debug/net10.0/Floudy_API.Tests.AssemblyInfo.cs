@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Floudy_API.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49602facca1b849430b1d6ec8f52b49f63c57354")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d8fc3a393c0873911169ddbec36a8c1a2c22841")]
 [assembly: System.Reflection.AssemblyProductAttribute("Floudy_API.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Floudy_API.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

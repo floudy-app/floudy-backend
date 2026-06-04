@@ -19,9 +19,10 @@ public class FakeEmailService : EmailService
     {
     }
 
-    public override void SendRecoveryEmail(string recipientEmail, string username, string resetUrl)
+    public override Task SendRecoveryEmail(string recipientEmail, string username, string resetUrl)
     {
         LastResetUrl = resetUrl;
+        return Task.CompletedTask;
     }
 }
 

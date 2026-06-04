@@ -19,9 +19,13 @@ public class FileController(FileService file_service, IHubContext<FloudyHub> hub
     {
         var token = (UserToken)HttpContext.Items["UserToken"]!;
 
-        var response = file_service.GetPage(page_index, token.UserId).Select(file => new
+        var files = file_service.GetPage(page_index, token.UserId).ToList();
+        var baseIndex = (page_index - 1) * FileService.PAGE_FILE_COUNT;
+
+        var response = files.Select((file, i) => new
         {
             id = file.ID.ToString(),
+            displayId = baseIndex + i + 1,
             name = file.Name,
             size = file.ByteSize,
             type = file.Type,
@@ -40,10 +44,12 @@ public class FileController(FileService file_service, IHubContext<FloudyHub> hub
     public IActionResult GetRecent([FromQuery] int count = 10)
     {
         var token = (UserToken)HttpContext.Items["UserToken"]!;
+        var positionMap = file_service.GetFileIdPositionMap(token.UserId);
 
         var response = file_service.GetRecent(count, token.UserId).Select(file => new
         {
             id = file.ID.ToString(),
+            displayId = positionMap.TryGetValue(file.ID, out var pos) ? pos : 0,
             name = file.Name,
             size = file.ByteSize,
             type = file.Type,

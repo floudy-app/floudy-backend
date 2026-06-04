@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aVBOPI/6TpY=",
+  "dgSpecHash": "sb1zch33DSQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\marius\\source\\web\\floudy_full\\Floudy_API\\Floudy_API\\Floudy_API.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\marius\\.nuget\\packages\\mongodb.bson\\3.6.0\\mongodb.bson.3.6.0.nupkg.sha512",
     "C:\\Users\\marius\\.nuget\\packages\\mongodb.driver\\3.6.0\\mongodb.driver.3.6.0.nupkg.sha512",
     "C:\\Users\\marius\\.nuget\\packages\\mongodb.entityframeworkcore\\10.0.1\\mongodb.entityframeworkcore.10.0.1.nupkg.sha512",
+    "C:\\Users\\marius\\.nuget\\packages\\resend\\0.5.1\\resend.0.5.1.nupkg.sha512",
     "C:\\Users\\marius\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\marius\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
     "C:\\Users\\marius\\.nuget\\packages\\system.clientmodel\\1.10.0\\system.clientmodel.1.10.0.nupkg.sha512",

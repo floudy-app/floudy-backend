@@ -65,7 +65,7 @@ namespace Floudy.API.Controllers
         }
 
         [HttpPost("recovery/send")]
-        public IActionResult SendRecovery([FromBody] RecoverySendRequest request)
+        public async Task<IActionResult> SendRecovery([FromBody] RecoverySendRequest request)
         {
             if (!user_service.ValidateRecoveryCheck(request.UsernameOrEmail, out var errorMessage, out var user)) return StatusCode(422, errorMessage);
 
@@ -85,7 +85,7 @@ namespace Floudy.API.Controllers
 
                 var resetUrl = $"{origin}/recovery?reset={resetToken}";
 
-                email_service.SendRecoveryEmail(user.Email, user.Username, resetUrl);
+                await email_service.SendRecoveryEmail(user.Email, user.Username, resetUrl);
                 log_service.LogAction(user.ID.ToString(), user.Username, user.Role.Name, "password_recovery", $"Sent password recovery email with token to {user.Email}");
                 
                 return Ok(new { message = $"A recovery email has been sent to {user.Email}." });

@@ -469,6 +469,19 @@
           }
         }
       },
+      "Resend/0.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Resend.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Resend.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -1190,6 +1203,21 @@
         "packageIcon.png"
       ]
     },
+    "Resend/0.5.1": {
+      "sha512": "omjgTjmosGHJ+bF9Mnk6Gu4TqCwIE/XyeYvQCfkPlDmoUE5yuNwxUP5Cyt9Og2KTqTzKqfQypFzlgCgORCEOSw==",
+      "type": "package",
+      "path": "resend/0.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Resend.dll",
+        "lib/net8.0/Resend.xml",
+        "resend.0.5.1.nupkg.sha512",
+        "resend.nuspec"
+      ]
+    },
     "SharpCompress/0.30.1": {
       "sha512": "XqD4TpfyYGa7QTPzaGlMVbcecKnXy4YmYLDWrU+JIj7IuRNl7DH2END+Ll7ekWIY8o3dAMWLFDE1xdhfIWD1nw==",
       "type": "package",
@@ -1425,7 +1453,8 @@
       "Azure.Identity >= 1.21.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.7",
-      "MongoDB.EntityFrameworkCore >= 10.0.1"
+      "MongoDB.EntityFrameworkCore >= 10.0.1",
+      "Resend >= 0.5.1"
     ]
   },
   "packageFolders": {
@@ -1493,6 +1522,10 @@
           "MongoDB.EntityFrameworkCore": {
             "target": "Package",
             "version": "[10.0.1, )"
+          },
+          "Resend": {
+            "target": "Package",
+            "version": "[0.5.1, )"
           }
         },
         "imports": [

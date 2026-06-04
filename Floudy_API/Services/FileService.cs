@@ -9,7 +9,7 @@ namespace Floudy.API.Services
 {
     public class FileService(FileRepository repository)
     {
-        private const int PAGE_FILE_COUNT = 10;
+        public const int PAGE_FILE_COUNT = 10;
 
         public FileRepository Files { get; } = repository;
 
@@ -93,11 +93,19 @@ namespace Floudy.API.Services
         }
 
         public IEnumerable<RawFile> GetPage(int page_index, long userId) => 
-            page_index < 1 ? [] : repository.GetByUserId(userId).OrderByDescending(f => f.UploadDate).Skip((page_index - 1) * PAGE_FILE_COUNT).Take(PAGE_FILE_COUNT).Select(MapToModel);
+            page_index < 1 ? [] : repository.GetByUserId(userId).Skip((page_index - 1) * PAGE_FILE_COUNT).Take(PAGE_FILE_COUNT).Select(MapToModel);
 
         public int TotalPageCount(long userId) => Math.Clamp((repository.CountByUserId(userId) + PAGE_FILE_COUNT - 1) / PAGE_FILE_COUNT, 1, int.MaxValue);
 
         public IEnumerable<RawFile> GetRecent(int count, long userId) => repository.GetByUserId(userId).OrderByDescending(f => f.UploadDate).Take(count).Select(MapToModel);
+
+        public Dictionary<long, int> GetFileIdPositionMap(long userId)
+        {
+            var allIds = repository.GetByUserId(userId).Select(f => f.ID).ToList();
+            var map = new Dictionary<long, int>();
+            for (int i = 0; i < allIds.Count; i++) map[allIds[i]] = i + 1;
+            return map;
+        }
 
         public Dictionary<string, int> TypeStatistics(long userId) => 
             repository.GetByUserId(userId).GroupBy(x => Regex.Replace(x.Type, @"\/.*$", "")).ToDictionary(x => x.Key, x => x.Count());
